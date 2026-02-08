@@ -1,0 +1,107 @@
+:root {
+  --hero: #6943FF;
+  --page-bg: #1c1c1c;
+  --app-bg: #1F2937;
+  --label: #CCC1FF;
+  --white: #FFFFFF;
+  --black: #000000;
+  --button-color: #3D3D3D;
+}
+
+* {box-sizing: border-box;}
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: var(--page-bg);
+  
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 52px);
+  padding-top: clamp(64px, 10vw, 115px);
+  padding-bottom: clamp(64px, 10vw, 115px);
+}
+
+
+.container {
+  background-color: var(--app-bg);
+  color: var(--white);
+  gap: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#app-header {
+  background-color: var(--hero);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#app-title {
+  font-size: 1.5rem;
+}
+
+.convert-btn {
+
+  background-color: var(--label);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.convert-btn:hover {
+  background-color: var(--white);
+  color: var(--label);
+  transform: scale(1.05);
+}
+
+
+input[type="number"] {
+  /* Remove spinner arrows in Chrome, Safari, Edge */
+  appearance: textfield;
+  -webkit-appearance: none;
+  -moz-appearance: textfield; /* Remove spinner arrows in Firefox */
+  margin: 0;
+
+  
+  /* Style the input nicely */
+  padding: 0.5rem;
+  border: 1px solid var(--label);
+  border-radius: 4px;
+  background-color: var(--hero);
+  color: var(--white);
+  font-size: 1rem;
+  font-family: inherit;
+  width: auto;
+  min-width: 3.5rem;
+  box-shadow: 0 0 1px var(--black);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  
+}
+
+/* Optional: style on focus for better UX */
+input[type="number"]:focus {
+  outline: none;
+  border-color: var(--label);
+  box-shadow: 0 0 2px var(--black);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+ 
+}
+input[type="number"]:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s ease;
+}
+
