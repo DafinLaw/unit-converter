@@ -2,10 +2,9 @@ The Unit Converter web app consists of converting basic metric units into imperi
 
 ---
 ## WORK IN PROGRESS
-<<<<<<< HEAD
 ---
 ## Live Demo : https://dafinlaw.github.io/unit-converter/
-=======
+
 
 ---
 This repository contains a small client-side Unit Converter that converts between:
@@ -26,5 +25,3 @@ Usage
 3. Press "Reset" to clear the input and results.
 ---
 
-
->>>>>>> a3ecffa (Enhance README with usage instructions and input validation details; update HTML structure for input handling and button functionality; implement conversion logic in script.js; style adjustments for input and buttons in styles.css.)
