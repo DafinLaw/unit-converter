@@ -90,6 +90,11 @@ input[type="text"]:active, input[type="text"]:focus  {
   width: 60%;
 }
 
+input[::placeholder] {
+  color: var(--label);
+  opacity: 1;
+}
+
 
 .conversion-section {
   display: flex;
