@@ -27,9 +27,9 @@ function renderResult(valueInput) {
 
     if (valueInput === "") {
         alert("Please enter a value to convert.")
-        lengthResult.innerHTML = "0 meters = 0 feet | 0 feet = 0 meters"
-        volumeResult.innerHTML = "0 liters = 0 gallons | 0 gallons = 0 liters"
-        massResult.innerHTML = "0 kilograms = 0 pounds | 0 pounds = 0 kilograms"
+        lengthResult.textContent = "0 meters = 0 feet | 0 feet = 0 meters"
+        volumeResult.textContent = "0 liters = 0 gallons | 0 gallons = 0 liters"
+        massResult.textContent = "0 kilograms = 0 pounds | 0 pounds = 0 kilograms"
         return
     }
 
